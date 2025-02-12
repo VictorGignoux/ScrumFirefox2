@@ -89,6 +89,28 @@ button:hover{
 	transition: 0.3s;
 }
 
+#NormalMode{
+	width: 8vw;
+	height: 5.5vh;
+	font-size: 0.8vw;
+	position: fixed;
+	bottom: 4vh;
+	right: 2vw;
+	font-family: Nexa;
+	background-color: var(--title);
+	color: var(--title-shadow);
+	padding: 1.5vh;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+#NormalMode:hover{
+	background-color: var(--title-shadow);
+	color: var(--title);
+	transition: 0.3s;
+	margin: 1vh;
+}
+
 #soundActivation{
 	position: fixed;
 	top: 2vh;
@@ -114,5 +136,4 @@ button:hover{
 
 #soundActivation:hover{
 	background-color: rgba(70,70,70,70);
-	margin: 0;
 }

@@ -88,7 +88,9 @@ function checkInput() {
         }
         else{
             if(qwack(input.value)){
+                // mot de passe valide
                 input.style.backgroundColor = "#16af1c";
+                localStorage.setItem("isConnected", true);
                 window.location.href = 'masterMode.html';
             }
             else{
@@ -98,6 +100,7 @@ function checkInput() {
     });
 }
 
+// ????
 function qwack(blop){
     if(blop.length == droptable){
         let i = 0;
@@ -113,6 +116,7 @@ function qwack(blop){
     }
 }
 
+// joue un son donnée en paramètres
 function playSound(audioName)
 {
     var audio = document.getElementById(audioName);
@@ -120,6 +124,7 @@ function playSound(audioName)
         audio.play();
 }
 
+// permet d'activer ou désactiver le son
 function switchSoundState()
 {
     var enabledSVG = document.getElementById('soundActivation-enabled');
@@ -137,4 +142,11 @@ function switchSoundState()
         disabledSVG.style.display = 'none';
         isSoundEnable = true;
     }
+}
+
+// déconnection
+function disconnect()
+{
+    localStorage.setItem("isConnected", false);
+    window.location.href = 'https://victorgignoux.github.io/ScrumFirefox2/';
 }
