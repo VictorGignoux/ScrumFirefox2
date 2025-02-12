@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'TransMovie';
+  src: url('../font/transMovie.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../font/Nexa-Heavy.ttf');
+}
+
+@font-face{
+	font-family: 'abs';
+	src: url('absender1.ttf');
+}
+
+html {
+	--bg:						#18534F;
+	--bgbis:				#1D6E68;
+  --shadow: 			#76B2AE;
+  --title:				#FEEAA1;
+  --srch-txt:			#2e4240;
+  --title-shadow: #D6955B;
+  --footer:				#171F26;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	background-color: var(--bg);
+}
+
+#title{
+	padding-bottom: 2vh;
+}
+
+div#title h1{
+	margin: 0;
+	padding: 8vh 0 1vh 0;
+	width: 100%;
+	
+	font-size: 8vh;
+	font-family: TransMovie;
+	letter-spacing: 4px;
+
+	color: var(--title);
+	text-shadow	: var(--title-shadow) 3px 3px;
+
+	transition: 0.3s;
+}
+
+div#title h1:hover{
+	transition: 0.3s;
+	color: var(--title-shadow);
+	text-shadow	: var(--title) -3px -3px;
+}
+
+div#title p{
+	margin: 0;
+	padding: 0;
+	font-family: Nexa;
+	font-size: 1.8vh;
+	color: var(--shadow);
+	padding-top: 5px;
+}
+
+#maRecherche {
+	width: 60%;
+	margin: 3vh 0 5vh 0;
+  padding: 3vh;
+  border: 0px;
+  border-radius: 5px;
+  background-color: var(--bgbis);
+  color: var(--srch-txt);
+  transition: 0.2s;
+}
+
+#maRecherche:hover{
+	background-color: var(--shadow);
+	box-shadow: 0 0 1em var(--shadow);
+	transition: 0.2s;
+}
+
+#maRecherche:focus{
+	background-color: var(--shadow);
+	box-shadow: 0 0 1em var(--shadow);
+}
+
+#content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 20vw 5vw 20vw;
+}
+
+#content div{
+	width: 9vw;
+	padding: 0.5vw;
+	margin: 2vw;
+	font-family: TransMovie;
+	background-color: var(--bgbis);
+	transition: 0.3s;
+	border-radius: 10px;
+}
+
+#content div:hover{
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+	background-color: var(--shadow);
+	box-shadow: 0 0 2em var(--shadow);
+	transition: 0.3s;
+}
+
+#content div a img{
+	width: 6vw;
+	height: 6vw;
+	padding: 1vw;
+	font-family: Nexa;
+	color: whitesmoke;
+}
+
+#content div a p{
+	margin: 0;
+	padding: 0;
+	padding-top: 2vh;
+	padding-bottom: 1vh;
+	color: var(--bg);
+	font-size: 2.5vh;
+}
+
+footer{
+	padding: 2vh;
+	font-family: Nexa;
+	background-color: var(--footer);
+	color: whitesmoke;
+}
+
+footer a{
+	font-size: 2.5vh;
+	color: steelblue;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+a{
+	text-decoration: none;
+}
