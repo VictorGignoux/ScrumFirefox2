@@ -88,6 +88,7 @@ function checkInput() {
         }
         else{
             if(qwack(input.value)){
+                // mot de passe valide
                 input.style.backgroundColor = "#16af1c";
                 window.location.href = 'masterMode.html';
             }
@@ -98,6 +99,7 @@ function checkInput() {
     });
 }
 
+// ????
 function qwack(blop){
     if(blop.length == droptable){
         let i = 0;
@@ -113,6 +115,7 @@ function qwack(blop){
     }
 }
 
+// joue un son donnée en paramètres
 function playSound(audioName)
 {
     var audio = document.getElementById(audioName);
@@ -120,6 +123,7 @@ function playSound(audioName)
         audio.play();
 }
 
+// permet d'activer ou désactiver le son
 function switchSoundState()
 {
     var enabledSVG = document.getElementById('soundActivation-enabled');
