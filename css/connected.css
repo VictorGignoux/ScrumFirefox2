@@ -14,13 +14,13 @@
 }
 
 html {
-	--bg:						#313131;
-	--bgbis:				#444444;
-  --shadow: 			#586881;
-  --title:				#2e6cd0;
-  --srch-txt:			#282828;
-  --title-shadow: #91a8cd;
-  --footer:				#0b0e1b;
+	--bg:			#230901;
+	--bgbis:		#631708;
+  	--shadow: 		#961B0B;
+  	--title:		#BF3A07;
+  	--srch-txt:		#230901;
+  	--title-shadow: #F7AD1E;
+  	--footer:		#961B0B;
 }
 
 body{
@@ -69,6 +69,7 @@ div#title p{
 }
 
 #maRecherche {
+	font-size: 1vw;
 	width: 60%;
 	margin: 3vh 0 5vh 0;
   padding: 3vh;
