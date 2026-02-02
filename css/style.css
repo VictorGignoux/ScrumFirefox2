@@ -154,7 +154,7 @@ a{
 	text-decoration: none;
 }
 
-#portfolioSVG{
+.link-svg{
 	fill: var(--footer);
 	width: 6vw;
 	padding: 1vw;
